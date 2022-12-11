@@ -3,7 +3,7 @@ const { readFileSync } = require('fs')
 
 const registrar = async (argv) => {
 
-  let args = argv.filter((val, index) => {
+  const args = argv.filter((val, index) => {
     return index > 2
   })
   const nuevaCita = {
